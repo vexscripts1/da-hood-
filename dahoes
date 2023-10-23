@@ -1,0 +1,99 @@
+if game.PlaceId == 2788229376 then
+setclipboard("https://link-target.net/1001685/vexs-key-system")
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "🔫Da Hood Scripts🔫",
+   LoadingTitle = "Da hood Universal",
+   LoadingSubtitle = "by vex",
+   ConfigurationSaving = {
+    Enabled =  false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title ="vex | key system",
+      Subtitle = "Key System",
+      Note = "complete the linkverse!",
+      FileName = "Vex DaHood", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+ Key = {"https://pastebin.com/raw/0LxrayH2"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+    local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+    local Section = MainTab:CreateSection("Da Hood")
+
+    local Button = MainTab:CreateButton({
+   Name = "SwagMode hub",
+   Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+   end,
+})
+
+    local Button = MainTab:CreateButton({
+   Name = "RayX hub",
+   Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+   end,
+})
+
+    local Button = MainTab:CreateButton({
+   Name = "Arctic hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://polarsblade.xyz/Arctic/Arctic.txt"))()
+   end,
+})
+
+    local Button = MainTab:CreateButton({
+   Name = "SpaceHub (has keys)",
+   Callback = function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/SpaceHubLoader'))()
+   end,
+})
+
+       local Button = MainTab:CreateButton({
+   Name = "Agent Hub",
+   Callback = function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrhackerman35297/AgentCC/main/Launch.lua"))() 
+   end,
+})
+
+           local Button = MainTab:CreateButton({
+   Name = "Pluto Hub",
+   Callback = function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Loader.Lua', true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "NukerHub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
+   end,
+})
+
+    local Button = MainTab:CreateButton({
+   Name = "ZincHub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Zinzs/luascripting/main/canyoutellitsadahoodscriptornot.lua"))() 
+   end,
+})
+end
